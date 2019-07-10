@@ -205,6 +205,9 @@ persist.dbg.wfc_avail_ovr=1
 # Keystore
 ro.hardware.keystore_desede=true
 
+# Media
+debug.stagefright.c2inputsurface=-1
+
 # Netflix
 vendor.netflix.bsp_rev=Q6150-17263-1
 
