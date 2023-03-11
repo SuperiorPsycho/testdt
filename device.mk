@@ -385,6 +385,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.recovery.qcom.rc
 
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/surya/proprietary/vendor/firmware/novatek_ts_huaxing_fw.bin:recovery/root/vendor/firmware/novatek_ts_huaxing_fw.bin \
+    vendor/xiaomi/surya/proprietary/vendor/firmware/novatek_ts_huaxing_mp.bin:recovery/root/vendor/firmware/novatek_ts_huaxing_mp.bin \
+    vendor/xiaomi/surya/proprietary/vendor/firmware/novatek_ts_tianma_fw.bin:recovery/root/vendor/firmware/novatek_ts_tianma_fw.bin \
+    vendor/xiaomi/surya/proprietary/vendor/firmware/novatek_ts_tianma_mp.bin:recovery/root/vendor/firmware/novatek_ts_tianma_mp.bin
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.multihal
