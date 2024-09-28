@@ -189,7 +189,8 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 # Fingerprint
 persist.vendor.fingerprint.type=side
-persist.vendor.fingerprint.sensor_location=1080|920|220|local:4630946688386997377
+persist.vendor.fingerprint.sensor_location=1080|920|220|local:4630946688386997377,1080|920|220|local:4630946772315683201
+persist.vendor.fingerprint.sensor_modules=goodix,fpc
 
 # HVDCP
 persist.vendor.cp.fcc_main_ua=400000
