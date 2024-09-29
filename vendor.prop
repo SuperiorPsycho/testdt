@@ -187,6 +187,10 @@ persist.sys.sf.color_mode=9
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
+# Fingerprint
+persist.vendor.fingerprint.type=side
+persist.vendor.fingerprint.sensor_location=1080|920|220|local:4630946688386997377
+
 # HVDCP
 persist.vendor.cp.fcc_main_ua=400000
 persist.vendor.cp.taper_term_mv=6500
