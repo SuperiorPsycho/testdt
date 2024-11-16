@@ -68,6 +68,9 @@ function blob_fixup() {
         vendor/lib64/camera/components/com.qti.node.watermark.so)
             grep -q "libpiex_shim.so" "${2}" || ${PATCHELF} --add-needed "libpiex_shim.so" "${2}"
             ;;
+        vendor/lib64/libgoodixhwfingerprint.so)
+           ${PATCHELF} --replace-needed "libvendor.goodix.hardware.biometrics.fingerprint@2.1.so" "vendor.goodix.hardware.biometrics.fingerprint@2.1.so" "${2}"
+            ;;
     esac
 }
 
