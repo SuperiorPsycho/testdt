@@ -111,7 +111,8 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    libpiex_shim
+    libpiex_shim \
+    libui_shim.vendor
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
