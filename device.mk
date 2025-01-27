@@ -26,11 +26,6 @@ $(call inherit-product, vendor/xiaomi/surya/surya-vendor.mk)
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
-# GApps
-ifeq ($(WITH_GMS),true)
-$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
-endif
-
 # Additional native libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
