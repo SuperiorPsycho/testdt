@@ -58,7 +58,7 @@ function blob_fixup() {
         vendor/lib64/mediadrm/libwvdrmengine.so | vendor/lib*/libwvhidl.so)
             [ "$2" = "" ] && return 0
             grep -q libcrypto_shim.so "${2}" || "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
-            ;;            
+            ;;
         vendor/lib64/hw/camera.qcom.so | vendor/lib64/libFaceDetectpp-0.5.2.so | vendor/lib64/libfacedet.so)
             [ "$2" = "" ] && return 0
             sed -i "s|libmegface.so|libfacedet.so|g" "${2}"
@@ -69,7 +69,7 @@ function blob_fixup() {
             grep -q "libpiex_shim.so" "${2}" || ${PATCHELF} --add-needed "libpiex_shim.so" "${2}"
             ;;
         vendor/lib64/libgoodixhwfingerprint.so)
-            ${PATCHELF} --replace-needed "libvendor.goodix.hardware.biometrics.fingerprint@2.1.so" "vendor.goodix.hardware.biometrics.fingerprint@2.1.so" "${2}"
+            ${PATCHELF_0_17_2} --replace-needed "libvendor.goodix.hardware.biometrics.fingerprint@2.1.so" "vendor.goodix.hardware.biometrics.fingerprint@2.1.so" "${2}"
             ;;
     	vendor/lib64/libalRnBRT_GL_GBWRAPPER.so)
             [ "$2" = "" ] && return 0
