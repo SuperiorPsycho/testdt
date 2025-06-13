@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_surya.mk
+    $(LOCAL_DIR)/yaap_surya.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_surya-user \
-    aosp_surya-userdebug \
-    aosp_surya-eng
+    yaap_surya-user \
+    yaap_surya-userdebug \
+    yaap_surya-eng
