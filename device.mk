@@ -330,6 +330,9 @@ PRODUCT_PACKAGES += \
     tune2fs_ramdisk \
     resize2fs_ramdisk
 
+# Platform
+TARGET_BOARD_PLATFORM := sm6150
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.lineage-libperfmgr \
@@ -416,9 +419,6 @@ PRODUCT_PACKAGES += \
     qti-telephony-utils-prd \
     qti_telephony_utils.xml \
     qti_telephony_utils_prd.xml \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
     telephony-ext
 
 PRODUCT_COPY_FILES += \
